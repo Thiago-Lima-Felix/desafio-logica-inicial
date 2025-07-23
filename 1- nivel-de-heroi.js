@@ -27,7 +27,7 @@ for( let i = 0; i < 1; i++){
     else if(XP >= 10001){
         nivel = "radiante"
     }else {
-        nivel = "XP invlida"
+        nivel = "XP inválida"
     }
 }
 console.log("O Herói de nome " + nome + " está no nível " + nivel + ".")
