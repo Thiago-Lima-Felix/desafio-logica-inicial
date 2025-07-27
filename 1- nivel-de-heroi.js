@@ -1,8 +1,10 @@
-let XP = 9864
+/*
+let XP = 6765
 let nome = "ThiaGo"
 let nivel
 
-for( let i = 0; i < 1; i++){
+for( let i = 0; i <= XP ; i++){
+    XP += 4
     if(XP <= 1000){
         nivel = "ferro"
     }
@@ -30,4 +32,39 @@ for( let i = 0; i < 1; i++){
         nivel = "XP inválida"
     }
 }
+console.log("O Herói de nome " + nome + " está no nível " + nivel + ".")
+
+*/
+let XP = 100010
+let nome = "ThiaGo"
+let nivel = "XP inválida"
+
+for (let i = 0; i <= 10001; i++) {
+    if (XP <= 1000) {
+        nivel = "ferro"
+        break
+    } else if (XP <= 2000) {
+        nivel = "bronze"
+        break
+    } else if (XP <= 5000) {
+        nivel = "prata"
+        break
+    } else if (XP <= 7000) {
+        nivel = "ouro"
+        break
+    } else if (XP <= 8000) {
+        nivel = "platina"
+        break
+    } else if (XP <= 9000) {
+        nivel = "ascendente"
+        break
+    } else if (XP <= 10000) {
+        nivel = "imortal"
+        break
+    } else if (XP > 10000) {
+        nivel = "radiante"
+        break
+    }
+}
+
 console.log("O Herói de nome " + nome + " está no nível " + nivel + ".")
